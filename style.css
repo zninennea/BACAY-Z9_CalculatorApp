@@ -1,0 +1,63 @@
+h1 {
+  font-size: 50;
+  text-align: center;
+}
+.app {
+  color: blue;
+  font-size: 15px;
+
+}
+p {
+  font-size: 20px;
+}
+input {
+  padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+}
+label {
+  font-size: 20px;
+}
+form {
+  text-align: center;
+}
+button#add.button {
+  background-color: yellow; 
+border: none;
+color: black;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
+button#subtract.button {
+  background-color: red; 
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
+button#multiply.button {
+  background-color: pink; 
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
+button#divide.button {
+  background-color: darkcyan; 
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}

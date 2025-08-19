@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <h1>Calculator App</h1>
+    <h1 class="app">App</h1><br>
+    <form>
+        <label for="fnum">First Number</label><br>
+        <input type="number" id="fnum" name="fnum"><br>
+        <label for="snum">Second Number</label><br>
+        <input type="number" id="snum" name="snum"><br>
+        <br>
+        <p id="result">Result</p>
+        <button type="button" class="button" id="add">Add</button>
+        <button type="button" class="button" id="subtract">Subtract</button>
+        <button type="button" class="button" id="multiply">Multiply</button>
+        <button type="button" class="button" id="divide">Divide</button>
+    </form>
+
+    <script>
+        const result = document.getElementById("result");
+        const add_button = document.getElementById("add");
+        const subtract_button = document.getElementById("subtract");
+        const multiply_button = document.getElementById("multiply");
+        const divide_button = document.getElementById("divide");
+        let answer = 0;
+
+        add_button.addEventListener("click", (event) => {
+            event.preventDefault(); 
+
+            const first_number = document.getElementById("fnum").value;
+            const second_number = document.getElementById("snum").value;
+
+            answer = Number(first_number) + Number(second_number);
+            console.log(answer);
+            result.textContent = answer; 
+
+        });
+
+        subtract_button.addEventListener("click", (event) => {
+            event.preventDefault(); 
+
+            const first_number = document.getElementById("fnum").value;
+            const second_number = document.getElementById("snum").value;
+
+            answer = Number(first_number) - Number(second_number);
+            console.log(answer);
+            result.textContent = answer; 
+
+
+        });
+
+        multiply_button.addEventListener("click", (event) => {
+            event.preventDefault(); 
+
+            const first_number = document.getElementById("fnum").value;
+            const second_number = document.getElementById("snum").value;
+
+            answer = Number(first_number) * Number(second_number);
+            console.log(answer);
+            result.textContent = answer; 
+
+
+        });
+
+        divide_button.addEventListener("click", (event) => {
+            event.preventDefault(); 
+
+            const first_number = document.getElementById("fnum").value;
+            const second_number = document.getElementById("snum").value;
+
+            answer = Number(first_number) / Number(second_number);
+            console.log(answer);
+            result.textContent = answer; 
+
+
+        });
+
+
+    </script>
+</body>
+</html>
